@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Turing: Pioneer of AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+            opacity: 1;
+        }
+        .btn {
+            @apply px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition-transform transform hover:scale-105;
+        }
+        .nav-btn {
+            @apply px-5 py-2 bg-gray-700 text-white font-semibold rounded-lg shadow-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 transition-transform transform hover:scale-105;
+        }
+        .resource-link {
+            @apply flex items-center justify-center gap-3 px-6 py-4 bg-teal-600 text-white font-semibold rounded-lg shadow-md hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:ring-opacity-75 transition-all duration-300 transform hover:scale-105 text-center;
+        }
+        .card {
+            @apply bg-white/10 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-white/20;
+        }
+    </style>
+</head>
+<body class="h-full bg-gray-900 text-white flex items-center justify-center p-4">
+
+    <div id="presentation" class="w-full max-w-5xl h-[700px] max-h-[90vh] relative">
+
+        <!-- Slide 1: Title -->
+        <div id="slide-1" class="slide active h-full">
+            <div class="h-full flex flex-col items-center justify-center text-center bg-cover bg-center rounded-2xl shadow-2xl p-8" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://placehold.co/1200x800/000000/FFFFFF?text=Abstract+Code');">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">Alan Turing</h1>
+                <p class="text-2xl md:text-3xl text-blue-300 mb-8">Pioneer of Modern Computing & Artificial Intelligence</p>
+                <button onclick="changeSlide(1)" class="btn text-xl">Start Presentation</button>
+            </div>
+        </div>
+
+        <!-- Slide 2: Early Life -->
+        <div id="slide-2" class="slide h-full">
+            <div class="h-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center card">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl font-bold text-blue-300 mb-6">A Genius in the Making</h2>
+                    <ul class="space-y-4 text-lg text-gray-200">
+                        <li class="flex items-start"><span class="text-blue-400 mr-3 mt-1">&#10148;</span><span>Born in London, England, on June 23, 1912.</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3 mt-1">&#10148;</span><span>Showed extraordinary intelligence from a young age, with a deep interest in science and math.</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3 mt-1">&#10148;</span><span>Graduated with distinction in Mathematics from King's College, Cambridge.</span></li>
+                        <li class="flex items-start"><span class="text-blue-400 mr-3 mt-1">&#10148;</span><span>Published his foundational paper "On Computable Numbers" in 1936, introducing the Turing Machine.</span></li>
+                         <li class="flex items-start"><span class="text-blue-400 mr-3 mt-1">&#10148;</span><span>Earned his Ph.D. from Princeton University in 1938.</span></li>
+                    </ul>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://placehold.co/600x600/334155/E0E7FF?text=Alan+Turing" alt="A portrait of a young Alan Turing" class="rounded-xl object-cover w-full h-full max-h-[400px] shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/334155/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Major Contributions -->
+        <div id="slide-3" class="slide h-full">
+             <div class="h-full flex flex-col card p-8">
+                <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">Codebreaker and Visionary</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex-grow">
+                    <div class="bg-gray-800 p-6 rounded-lg flex flex-col">
+                        <h3 class="text-2xl font-semibold text-teal-300 mb-4">The Turing Machine</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">A theoretical model of a general-purpose computer that could simulate any algorithm. It laid the foundation for computer science by defining the principles of computation.</p>
+                        <img src="https://placehold.co/600x400/1E293B/93C5FD?text=Turing+Machine+Diagram" alt="Diagram of a Turing Machine" class="rounded-lg object-contain w-full h-56 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1E293B/FFFFFF?text=Image+Not+Found';">
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg flex flex-col">
+                        <h3 class="text-2xl font-semibold text-teal-300 mb-4">Bletchley Park & The Enigma</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">During WWII, Turing's work was vital in breaking the German Enigma code. He designed the "Bombe," a machine that automated codebreaking, significantly shortening the war.</p>
+                        <img src="https://placehold.co/600x400/1E293B/93C5FD?text=Bombe+Machine" alt="The Bombe machine at Bletchley Park" class="rounded-lg object-cover w-full h-56 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1E293B/FFFFFF?text=Image+Not+Found';">
+                    </div>
+                </div>
+             </div>
+        </div>
+
+        <!-- Slide 4: Contributions to AI -->
+        <div id="slide-4" class="slide h-full">
+            <div class="h-full flex flex-col card p-8">
+                <h2 class="text-3xl font-bold text-blue-300 mb-6 text-center">The Father of Artificial Intelligence</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 flex-grow">
+                    <div class="bg-gray-800 p-6 rounded-lg flex flex-col">
+                        <h3 class="text-2xl font-semibold text-teal-300 mb-4">The Turing Test</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">In his 1950 paper, he proposed a test for machine intelligence. If a human judge can't tell the difference between a machine and a human in conversation, the machine "thinks."</p>
+                        <img src="https://placehold.co/600x400/1E293B/93C5FD?text=Illustration+of+Turing+Test" alt="Illustration of the Turing Test" class="rounded-lg object-contain w-full h-56 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1E293B/FFFFFF?text=Image+Not+Found';">
+                    </div>
+                    <div class="bg-gray-800 p-6 rounded-lg flex flex-col">
+                        <h3 class="text-2xl font-semibold text-teal-300 mb-4">Early AI Concepts</h3>
+                        <p class="text-gray-300 mb-4 flex-grow">Turing envisioned a "child machine" capable of learning from experience. This concept was a direct precursor to modern machine learning and neural networks.</p>
+                        <img src="https://placehold.co/600x400/1E293B/93C5FD?text=Abstract+Neural+Network" alt="Abstract representation of a neural network" class="rounded-lg object-cover w-full h-56 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1E293B/FFFFFF?text=Image+Not+Found';">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 5: Legacy -->
+        <div id="slide-5" class="slide h-full">
+            <div class="h-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center card">
+                <div>
+                    <h2 class="text-3xl font-bold text-blue-300 mb-6">A Lasting Legacy</h2>
+                    <p class="text-lg text-gray-200">Turing's visionary ideas are the bedrock of modern technology:</p>
+                    <ul class="space-y-3 mt-4 text-gray-300">
+                        <li><strong class="text-teal-300">Natural Language Processing:</strong> The Turing Test spurred the creation of chatbots and virtual assistants.</li>
+                        <li><strong class="text-teal-300">Machine Learning:</strong> His concept of a "learning machine" is now the dominant AI paradigm, used in everything from streaming recommendations to medical diagnostics.</li>
+                        <li><strong class="text-teal-300">The Philosophical Debate:</strong> His work ignited the ongoing conversation about machine consciousness and the future of AI.</li>
+                    </ul>
+                </div>
+                <div>
+                     <img src="https://placehold.co/600x600/334155/E0E7FF?text=Modern+AI+Applications" alt="A collage of modern AI applications" class="rounded-xl object-cover w-full h-full max-h-[400px] shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/334155/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Resources -->
+        <div id="slide-6" class="slide h-full">
+            <div class="h-full flex flex-col items-center justify-center text-center card">
+                <h2 class="text-3xl font-bold text-blue-300 mb-6">Discover More</h2>
+                <p class="text-lg text-gray-200 mb-8 max-w-2xl">Explore the following resources to learn more about Alan Turing's incredible life and work. Click any button to open the link in a new tab.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 w-full max-w-2xl">
+                    <a href="https://www.youtube.com/watch?v=nuPZUUED5uk" target="_blank" class="resource-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                        <span>Watch: The Imitation Game</span>
+                    </a>
+                    <a href="https://academic.oup.com/mind/article/LIX/236/433/986238" target="_blank" class="resource-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                        <span>Read Turing's Paper</span>
+                    </a>
+                    <a href="https://bletchleypark.org.uk/" target="_blank" class="resource-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        <span>Explore Bletchley Park</span>
+                    </a>
+                     <a href="https://www.youtube.com/watch?v=dNRDvKYDz-U" target="_blank" class="resource-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line></svg>
+                        <span>Video: Turing Machine Explained</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div id="navigation" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex gap-4" style="display: none;">
+            <button onclick="changeSlide(-1)" id="prevBtn" class="nav-btn">&larr; Previous</button>
+            <button onclick="changeSlide(1)" id="nextBtn" class="nav-btn">Next &rarr;</button>
+        </div>
+
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 6;
+        const slides = document.querySelectorAll('.slide');
+        const nav = document.getElementById('navigation');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        function showSlide(slideIndex) {
+            slides.forEach((slide, index) => {
+                if (index + 1 === slideIndex) {
+                    slide.classList.add('active');
+                } else {
+                    slide.classList.remove('active');
+                }
+            });
+
+            // Handle navigation visibility
+            if (slideIndex > 1) {
+                nav.style.display = 'flex';
+            } else {
+                nav.style.display = 'none';
+            }
+
+            // Handle prev/next button states
+            prevBtn.disabled = slideIndex === 2;
+            nextBtn.textContent = slideIndex === totalSlides ? 'Finish' : 'Next \u2192';
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide > totalSlides) {
+                currentSlide = 1; // Loop back to start
+            }
+            if (currentSlide < 1) {
+                currentSlide = 1; 
+            }
+            // A special case to go from the first slide to the second
+            if (currentSlide === 1 && direction === 1) {
+                currentSlide = 2;
+            }
+
+            showSlide(currentSlide);
+        }
+        
+        // Initial setup
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
