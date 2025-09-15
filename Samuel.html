@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Samuel: A Pioneer of AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .slide-content {
+            min-height: 450px;
+        }
+        .btn-link {
+            transition: all 0.3s ease;
+        }
+        .btn-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-slate-100 flex items-center justify-center min-h-screen p-4">
+
+    <main class="w-full max-w-4xl mx-auto">
+        <div id="presentation-container" class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            
+            <!-- Slide 1: Title -->
+            <div id="slide-1" class="slide active p-8 md:p-12">
+                <div class="slide-content flex flex-col items-center justify-center text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-slate-800 mb-4">Arthur Samuel</h1>
+                    <p class="text-xl md:text-2xl text-slate-600">The Pioneer Who Taught Machines to Learn</p>
+                    <img src="https://placehold.co/600x400/000000/FFFFFF?text=Arthur+Samuel" alt="Portrait of Arthur Samuel" class="my-8 rounded-lg shadow-md object-cover w-full max-w-md h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x400/334155/FFFFFF?text=Image+Not+Found';">
+                </div>
+            </div>
+
+            <!-- Slide 2: Early Life & Education -->
+            <div id="slide-2" class="slide p-8 md:p-12">
+                <div class="slide-content">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Early Life & Career</h2>
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/2">
+                            <img src="https://placehold.co/600x400/475569/FFFFFF?text=MIT+Campus" alt="MIT Campus" class="rounded-lg shadow-md w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x400/475569/FFFFFF?text=Image+Not+Found';">
+                        </div>
+                        <div class="md:w-1/2">
+                            <ul class="list-disc list-inside space-y-3 text-lg text-slate-700">
+                                <li>Born in Emporia, Kansas, in 1901.</li>
+                                <li>Earned a B.A. from the College of Emporia (1923).</li>
+                                <li>Received an M.S. in Electrical Engineering from MIT (1926).</li>
+                                <li>Worked at Bell Labs, contributing to radar technology during WWII.</li>
+                                <li>Joined IBM in 1949, where his most influential work in AI began.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: The Checkers Program -->
+            <div id="slide-3" class="slide p-8 md:p-12">
+                 <div class="slide-content">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">The Samuel Checkers-Playing Program</h2>
+                    <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                        <div class="md:w-1/2">
+                             <img src="https://placehold.co/600x400/7f1d1d/FFFFFF?text=Checkers+Board" alt="A checkers board" class="rounded-lg shadow-md w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x400/7f1d1d/FFFFFF?text=Image+Not+Found';">
+                        </div>
+                        <div class="md:w-1/2">
+                            <p class="text-lg text-slate-700 mb-4">Starting in the 1950s, Samuel developed one of the world's first self-learning programs. It was a landmark achievement in AI.</p>
+                            <ul class="list-disc list-inside space-y-3 text-lg text-slate-700">
+                                <li>It wasn't just programmed; it <span class="font-semibold">learned from experience</span>.</li>
+                                <li>The program played thousands of games against itself to improve.</li>
+                                <li>It eventually learned to play better than Arthur Samuel himself.</li>
+                                <li>Demonstrated publicly on television in 1956, astounding viewers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Key AI Contributions -->
+            <div id="slide-4" class="slide p-8 md:p-12">
+                <div class="slide-content">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Core AI Concepts & Contributions</h2>
+                     <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/2">
+                           <img src="https://placehold.co/600x400/1e293b/FFFFFF?text=IBM+701+Computer" alt="IBM 701 Computer" class="rounded-lg shadow-md w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x400/1e293b/FFFFFF?text=Image+Not+Found';">
+                           <p class="text-center text-sm text-slate-500 mt-2">Samuel's program ran on early IBM computers like the 701.</p>
+                        </div>
+                        <div class="md:w-1/2">
+                            <p class="text-lg text-slate-700 mb-4">Samuel popularized the term <span class="font-semibold">"Machine Learning"</span> and pioneered several key techniques:</p>
+                            <ul class="list-disc list-inside space-y-3 text-lg text-slate-700">
+                                <li><span class="font-semibold">Rote Learning:</span> Remembering past moves and outcomes.</li>
+                                <li><span class="font-semibold">Alpha-Beta Pruning:</span> A search algorithm to efficiently find optimal moves.</li>
+                                <li><span class="font-semibold">Heuristic Evaluation:</span> Creating a function to score the "goodness" of a board position.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 5: Influence on Modern AI -->
+            <div id="slide-5" class="slide p-8 md:p-12">
+                 <div class="slide-content">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-6 text-center">Influence on Modern AI</h2>
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="md:w-1/2">
+                             <img src="https://placehold.co/600x400/047857/FFFFFF?text=Modern+AI+Brain" alt="Abstract modern AI graphic" class="rounded-lg shadow-md w-full h-auto" onerror="this.onerror=null;this.src='https://placehold.co/600x400/047857/FFFFFF?text=Image+Not+Found';">
+                        </div>
+                        <div class="md:w-1/2">
+                            <p class="text-lg text-slate-700 mb-4">Samuel's fundamental ideas are the bedrock of today's AI:</p>
+                            <ul class="list-disc list-inside space-y-3 text-lg text-slate-700">
+                                <li>His work proved that machines could learn and improve on their own.</li>
+                                <li>The concept of a machine learning from data is central to everything from <span class="font-semibold">recommendation engines</span> to <span class="font-semibold">self-driving cars</span>.</li>
+                                <li>Game-playing remains a key benchmark for testing and advancing AI capabilities (e.g., Chess, Go).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Resources -->
+            <div id="slide-6" class="slide p-8 md:p-12">
+                <div class="slide-content text-center">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-6">Learn More</h2>
+                    <p class="text-lg text-slate-600 mb-8">Explore these resources to dive deeper into Arthur Samuel's work and the history of AI.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <a href="https://www.youtube.com/watch?v=4h0QpNWrPbg" target="_blank" class="btn-link block bg-red-600 text-white font-bold py-4 px-6 rounded-lg shadow-lg hover:bg-red-700">
+                            Watch: The Roots of AI (Video)
+                        </a>
+                         <a href="http://infolab.stanford.edu/pub/voy/museum/samuel.html" target="_blank" class="btn-link block bg-blue-600 text-white font-bold py-4 px-6 rounded-lg shadow-lg hover:bg-blue-700">
+                            Read: Stanford In Memoriam
+                        </a>
+                        <a href="https://webdocs.cs.ualberta.ca/~chinook/project/legacy.html" target="_blank" class="btn-link block bg-slate-700 text-white font-bold py-4 px-6 rounded-lg shadow-lg hover:bg-slate-800">
+                            Analysis: Samuel's Legacy
+                        </a>
+                        <a href="https://people.csail.mit.edu/brooks/idocs/Samuel.pdf" target="_blank" class="btn-link block bg-emerald-600 text-white font-bold py-4 px-6 rounded-lg shadow-lg hover:bg-emerald-700">
+                            Read Samuel's 1959 Paper (PDF)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="bg-slate-100 p-4 flex justify-between items-center border-t border-slate-200">
+                <button id="prev-btn" class="bg-slate-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-slate-700 disabled:bg-slate-300 disabled:cursor-not-allowed transition-colors">Previous</button>
+                <div id="slide-indicator" class="text-slate-600 text-sm font-medium">Slide 1 of 6</div>
+                <button id="next-btn" class="bg-slate-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-slate-700 disabled:bg-slate-300 disabled:cursor-not-allowed transition-colors">Next</button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentSlide = 1;
+            const totalSlides = 6;
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const slideIndicator = document.getElementById('slide-indicator');
+
+            function showSlide(n) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                const targetSlide = document.getElementById(`slide-${n}`);
+                if (targetSlide) {
+                    targetSlide.classList.add('active');
+                }
+                
+                // Update indicator
+                slideIndicator.textContent = `Slide ${n} of ${totalSlides}`;
+
+                // Update button states
+                prevBtn.disabled = (n === 1);
+                nextBtn.disabled = (n === totalSlides);
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 1) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initially set up the first slide
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
