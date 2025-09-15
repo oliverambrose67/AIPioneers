@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Weizenbaum: Pioneer and Prophet of AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+            min-height: 80vh; /* Ensure slides take up significant height */
+        }
+        .slide.active {
+            display: flex;
+        }
+        /* Custom styles for better presentation look */
+        .slide-content {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .resource-btn {
+            transition: all 0.3s ease;
+        }
+        .resource-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div id="presentation-container" class="w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden">
+        
+        <!-- Slide 1: Title -->
+        <div id="slide-1" class="slide active flex-col items-center justify-center text-center p-8 md:p-16 bg-gray-900 text-white">
+            <div class="slide-content">
+                <img src="https://placehold.co/128x128/EFEFEF/333333?text=J.+Weizenbaum" alt="Portrait of Joseph Weizenbaum" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-gray-500 object-cover">
+                <h1 class="text-4xl md:text-5xl font-bold mb-2">Joseph Weizenbaum</h1>
+                <p class="text-xl md:text-2xl text-gray-300">Pioneer and Prophet of AI</p>
+                <p class="mt-4 text-lg text-gray-400">The Mind Behind the First Chatbot and the Conscience of a Technological Revolution</p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Early Life -->
+        <div id="slide-2" class="slide flex-col md:flex-row items-center p-8">
+            <div class="slide-content md:w-1/2 md:pr-8">
+                <h2 class="text-3xl font-bold mb-4">Early Life: From Berlin to the Computer Age</h2>
+                <ul class="list-disc list-inside space-y-3 text-lg">
+                    <li>Born in Berlin, Germany, in 1923 to Jewish parents.</li>
+                    <li>Fled Nazi Germany with his family in 1936 to escape persecution.</li>
+                    <li>Served in the U.S. Army Air Corps during WWII.</li>
+                    <li>Earned degrees in Mathematics from Wayne State University, joining the dawn of the computer age.</li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0 flex-shrink-0">
+                <img src="https://placehold.co/600x400/CCCCCC/555555?text=Berlin,+c.1930s" alt="1930s Berlin" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                 <p class="text-sm text-gray-500 mt-2 text-center">Potsdamer Platz, Berlin, circa 1930s.</p>
+            </div>
+        </div>
+
+        <!-- Slide 3: The Birth of ELIZA -->
+        <div id="slide-3" class="slide flex-col md:flex-row items-center p-8">
+            <div class="slide-content md:w-1/2 md:pr-8">
+                <h2 class="text-3xl font-bold mb-4">The Birth of ELIZA</h2>
+                <p class="text-lg mb-4">At MIT between 1964-1966, Weizenbaum created **ELIZA**, one of the world's first conversational programs, or "chatbots."</p>
+                <p class="text-lg mb-4">The most famous script, **DOCTOR**, simulated a psychotherapist by recognizing keywords and rephrasing the user's statements as questions, creating a startling illusion of understanding.</p>
+                <a href="https://www.youtube.com/watch?v=zhxNI7V2IxM" target="_blank" class="resource-btn inline-block bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-blue-700">
+                    ▶️ Watch: How ELIZA Worked
+                </a>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+                <img src="https://placehold.co/600x400/AEC6CF/333333?text=MIT+Campus" alt="MIT Campus in the 1960s" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                <p class="text-sm text-gray-500 mt-2 text-center">The MIT campus, where this groundbreaking work took place.</p>
+            </div>
+        </div>
+
+        <!-- Slide 4: The ELIZA Effect -->
+        <div id="slide-4" class="slide flex-col md:flex-row items-center p-8">
+            <div class="slide-content md:w-1/2 md:pr-8">
+                <h2 class="text-3xl font-bold mb-4">The "ELIZA Effect"</h2>
+                <p class="text-lg mb-4">Weizenbaum was stunned as he observed users, including his own secretary, forming deep emotional bonds with ELIZA and sharing intimate secrets.</p>
+                <p class="text-lg mb-4">He coined the term **"ELIZA Effect"** to describe the powerful human tendency to anthropomorphize machines and attribute genuine understanding to them, even when knowing it's just a program.</p>
+                <a href="https://99percentinvisible.org/episode/the-eliza-effect/" target="_blank" class="resource-btn inline-block bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-green-700">
+                    🎧 Listen: The ELIZA Effect Podcast
+                </a>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+                 <img src="https://placehold.co/600x400/D9E8FF/0052CC?text=Chatbot+UI" alt="Chatbot conversation interface" class="rounded-lg shadow-lg w-full h-auto object-cover border">
+                 <p class="text-sm text-gray-500 mt-2 text-center">A modern interpretation of a chatbot interface.</p>
+            </div>
+        </div>
+
+        <!-- Slide 5: A Voice of Caution -->
+        <div id="slide-5" class="slide flex-col md:flex-row items-center p-8">
+             <div class="slide-content md:w-1/2 md:pr-8">
+                <h2 class="text-3xl font-bold mb-4">A Voice of Caution</h2>
+                <p class="text-lg mb-4">Troubled by the reaction to ELIZA, Weizenbaum became a vocal critic. In his 1976 book, **"Computer Power and Human Reason,"** he argued for the limits of AI.</p>
+                <p class="text-lg mb-4">He stressed the crucial distinction between a computer's ability to **calculate** and a human's capacity for **judgment, wisdom, and compassion.**</p>
+                <a href="https://boltzmann-brain.github.io/posts/weizenbaum/" target="_blank" class="resource-btn inline-block bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-purple-700">
+                    📰 Read: Interview with Weizenbaum
+                </a>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+                <img src="https://placehold.co/400x600/FFF8DC/A52A2A?text=Computer+Power" alt="Cover of the book Computer Power and Human Reason" class="rounded-lg shadow-lg w-auto h-96 object-contain mx-auto">
+            </div>
+        </div>
+        
+        <!-- Slide 6: Influence on Modern AI -->
+        <div id="slide-6" class="slide flex-col md:flex-row items-center p-8">
+            <div class="slide-content md:w-1/2 md:pr-8">
+                <h2 class="text-3xl font-bold mb-4">Enduring Influence on Modern AI</h2>
+                <ul class="list-disc list-inside space-y-3 text-lg">
+                    <li><strong>Foundation of NLP:</strong> ELIZA was a crucial first step in Natural Language Processing, the tech behind today's chatbots and voice assistants.</li>
+                    <li><strong>Pioneer of AI Ethics:</strong> His warnings laid the groundwork for the entire field of AI ethics.</li>
+                    <li><strong>The Continuing Debate:</strong> The "ELIZA Effect" is more relevant than ever as we interact with sophisticated AI daily.</li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 mt-6 md:mt-0">
+                <img src="https://placehold.co/600x400/1A202C/FFFFFF?text=Modern+AI" alt="Modern artificial intelligence neural network" class="rounded-lg shadow-lg w-full h-auto object-cover">
+                 <p class="text-sm text-gray-500 mt-2 text-center">Weizenbaum's legacy shapes our interaction with modern AI.</p>
+            </div>
+        </div>
+
+        <!-- Slide 7: Conclusion -->
+        <div id="slide-7" class="slide flex-col items-center justify-center text-center p-8 md:p-16 bg-gray-800 text-white">
+            <div class="slide-content">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">The Man Who Saw the Future</h2>
+                <p class="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-6">
+                    Joseph Weizenbaum was a visionary who understood both the incredible potential and the profound risks of artificial intelligence. His work compels us to ask not just what computers <em>can</em> do, but what they <em>should</em> do.
+                </p>
+                <h3 class="text-2xl font-semibold mb-3">Further Learning</h3>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://www.pbs.org/wgbh/nova/video/the-birth-of-artificial-intelligence/" target="_blank" class="resource-btn inline-block bg-red-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-red-700">
+                        ▶️ History of AI Doc
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=5dZ_lvDgevk" target="_blank" class="resource-btn inline-block bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg shadow-md hover:bg-yellow-600">
+                       ▶️ FRONTLINE: Age of AI
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="mt-6 flex items-center gap-4">
+        <button id="prevBtn" class="bg-gray-700 text-white font-bold py-2 px-5 rounded-full hover:bg-gray-800 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+            &larr; Prev
+        </button>
+        <span id="slide-counter" class="text-gray-600 font-medium">1 / 7</span>
+        <button id="nextBtn" class="bg-gray-700 text-white font-bold py-2 px-5 rounded-full hover:bg-gray-800 transition duration-300">
+            Next &rarr;
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentSlide = 1;
+            const totalSlides = 7;
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideCounter = document.getElementById('slide-counter');
+
+            function showSlide(n) {
+                slides.forEach(slide => slide.classList.remove('active'));
+                const activeSlide = document.getElementById(`slide-${n}`);
+                if(activeSlide) {
+                    activeSlide.classList.add('active');
+                }
+                slideCounter.textContent = `${n} / ${totalSlides}`;
+                
+                prevBtn.disabled = n === 1;
+                nextBtn.disabled = n === totalSlides;
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 1) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowRight' && currentSlide < totalSlides) {
+                    nextBtn.click();
+                } else if (e.key === 'ArrowLeft' && currentSlide > 1) {
+                    prevBtn.click();
+                }
+            });
+            
+            showSlide(currentSlide); // Initialize first slide
+        });
+    </script>
+
+</body>
+</html>
+
