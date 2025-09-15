@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John McCarthy: The Father of Artificial Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .resource-btn {
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .resource-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div id="presentation-container" class="w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <div class="p-8 md:p-12 relative">
+            <!-- Slide 1: Title -->
+            <div id="slide-1" class="slide active">
+                <div class="text-center">
+                    <img src="https://placehold.co/150x150/E2E8F0/4A5568?text=John+McCarthy" alt="Portrait of John McCarthy" class="mx-auto rounded-full mb-6 border-4 border-gray-200">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">John McCarthy</h1>
+                    <p class="text-xl md:text-2xl text-indigo-600 font-medium">The Father of Artificial Intelligence</p>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">An interactive journey through the life and work of a computer science pioneer.</p>
+                    <button onclick="changeSlide(2)" class="mt-8 px-8 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 transition-transform transform hover:scale-105">
+                        Start Presentation
+                    </button>
+                </div>
+            </div>
+
+            <!-- Slide 2: Early Life -->
+            <div id="slide-2" class="slide">
+                 <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">A Prodigy in the Making</h2>
+                        <ul class="space-y-3 text-gray-700 list-disc list-inside">
+                            <li>Born in Boston, MA on September 4, 1927.</li>
+                            <li>A gifted mind, he taught himself college-level calculus while still in high school.</li>
+                            <li>Graduated from Caltech with a B.S. in Mathematics in 1948 after skipping the first two years of math courses.</li>
+                            <li>Earned his Ph.D. in Mathematics from Princeton University in 1951.</li>
+                        </ul>
+                         <a href="https://www.youtube.com/watch?v=1-3136a5Q1c" target="_blank" class="resource-btn inline-flex items-center mt-6 bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            Watch: Biography Video
+                        </a>
+                    </div>
+                     <img src="https://placehold.co/400x300/E2E8F0/4A5568?text=Caltech+Campus" alt="Caltech Campus" class="rounded-lg shadow-md w-full h-auto object-cover">
+                </div>
+            </div>
+
+            <!-- Slide 3: Birth of AI -->
+            <div id="slide-3" class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">The Birth of a Field</h2>
+                 <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <img src="https://placehold.co/400x400/E2E8F0/4A5568?text=Dartmouth+College" alt="Dartmouth College" class="rounded-lg shadow-md w-full h-auto object-cover">
+                    <div>
+                        <ul class="space-y-3 text-gray-700 list-disc list-inside">
+                            <li>In 1955, he authored the proposal that coined the term <strong class="text-indigo-600">"Artificial Intelligence."</strong></li>
+                            <li>This led to the 1956 Dartmouth Workshop, the event widely considered the birth of AI as a research field.</li>
+                            <li class="bg-indigo-50 p-4 rounded-lg border-l-4 border-indigo-500">
+                                <span class="font-semibold block text-indigo-800">Key Idea:</span>
+                                "...every aspect of learning or any other feature of intelligence can in principle be so precisely described that a machine can be made to simulate it."
+                            </li>
+                        </ul>
+                        <a href="https://www.youtube.com/watch?v=0y30M-v-_oM" target="_blank" class="resource-btn inline-flex items-center mt-6 bg-green-500 text-white px-5 py-2 rounded-lg hover:bg-green-600">
+                           <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                            Read: The Dartmouth Proposal
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4: Contributions 1 -->
+            <div id="slide-4" class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Building the Tools for AI</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg border">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">LISP (1958)</h3>
+                        <p class="text-gray-600 mb-4">Invented the LISP (List Processing) programming language. It was designed for symbolic computation, making it ideal for AI. Its influence is still seen in languages like Python and Rust.</p>
+                         <img src="https://placehold.co/400x200/2D3748/E2E8F0?text=(defun+factorial+(n)+...)" alt="LISP code snippet" class="rounded-md shadow-inner mb-4 w-full">
+                         <a href="https://www.youtube.com/watch?v=hmM4s-6y_4Y" target="_blank" class="resource-btn inline-flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                            Learn about LISP
+                        </a>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Time-Sharing</h3>
+                        <p class="text-gray-600 mb-4">Pioneered the concept of allowing multiple users to access a single, powerful computer simultaneously. This revolutionary idea was a direct precursor to the internet and modern cloud computing.</p>
+                        <img src="https://placehold.co/400x200/E2E8F0/4A5568?text=Mainframe+->+Terminals" alt="Diagram of time-sharing" class="rounded-md shadow-inner mb-4 w-full">
+                        <a href="https://www.youtube.com/watch?v=Q07PhW5sCEk" target="_blank" class="resource-btn inline-flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
+                           <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            How Time-Sharing Works
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Contributions 2 -->
+            <div id="slide-5" class="slide">
+                 <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Groundbreaking Innovations</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-50 p-6 rounded-lg border text-center">
+                        <img src="https://placehold.co/120x120/E2E8F0/4A5568?text=Memory+Mgmt" alt="Garbage Collection Icon" class="mx-auto mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Garbage Collection</h3>
+                        <p class="text-gray-600">Invented automatic memory management to reclaim unused memory. This crucial feature is now standard in most high-level programming languages, making software more stable and easier to write.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border text-center">
+                        <img src="https://placehold.co/120x120/E2E8F0/4A5568?text=SAIL+Logo" alt="SAIL Logo" class="mx-auto mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Founding AI Labs</h3>
+                        <p class="text-gray-600">Co-founded the MIT AI Lab and the Stanford Artificial Intelligence Laboratory (SAIL), establishing world-leading research centers that have nurtured generations of computer scientists.</p>
+                         <a href="http://ai.stanford.edu/" target="_blank" class="resource-btn inline-flex items-center mt-4 bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
+                           <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m-3.512 17.488L5.636 5.636m12.728 12.728L5.636 5.636"></path></svg>
+                            Visit Stanford AI Lab
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Legacy -->
+            <div id="slide-6" class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">An Enduring Legacy</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-gray-700 mb-4">John McCarthy's work is the bedrock of modern AI. His innovations continue to influence everything from the programming languages we use to the cloud platforms that power AI applications worldwide.</p>
+                        <ul class="space-y-2 text-gray-600 list-disc list-inside">
+                            <li>LISP's principles echo in today's AI languages.</li>
+                            <li>Time-sharing enabled the internet and cloud.</li>
+                            <li>His focus on logical reasoning remains a key goal in the quest for Artificial General Intelligence (AGI).</li>
+                        </ul>
+                         <a href="https://www.youtube.com/watch?v=s-g1a2hQp2I" target="_blank" class="resource-btn inline-flex items-center mt-6 bg-purple-500 text-white px-5 py-2 rounded-lg hover:bg-purple-600">
+                             <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            Video: The Future of AI
+                        </a>
+                    </div>
+                     <img src="https://placehold.co/400x300/E2E8F0/4A5568?text=Modern+AI+Interface" alt="Modern AI application" class="rounded-lg shadow-md w-full h-auto object-cover">
+                </div>
+                 <div class="text-center mt-8">
+                     <button onclick="changeSlide(1)" class="px-8 py-3 bg-gray-600 text-white font-semibold rounded-lg shadow-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-opacity-75 transition-transform transform hover:scale-105">
+                        Restart Presentation
+                    </button>
+                 </div>
+            </div>
+
+            <!-- Navigation -->
+            <div id="navigation-controls" class="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center space-x-4">
+                 <button id="prevBtn" onclick="prevSlide()" class="px-4 py-2 bg-gray-300 text-gray-800 font-semibold rounded-lg shadow-md hover:bg-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 disabled:opacity-50 disabled:cursor-not-allowed">
+                    Back
+                </button>
+                <span id="slide-counter" class="text-gray-600 font-medium text-sm"></span>
+                 <button id="nextBtn" onclick="nextSlide()" class="px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-opacity-75 disabled:opacity-50 disabled:cursor-not-allowed">
+                    Next
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 6;
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slide-counter');
+        const navControls = document.getElementById('navigation-controls');
+
+        function updateSlide() {
+            slides.forEach(slide => slide.classList.remove('active'));
+            const activeSlide = document.getElementById(`slide-${currentSlide}`);
+            if (activeSlide) {
+                activeSlide.classList.add('active');
+            }
+            updateNav();
+        }
+
+        function updateNav() {
+            if (currentSlide === 1) {
+                navControls.style.display = 'none';
+            } else {
+                navControls.style.display = 'flex';
+            }
+            
+            if (currentSlide === totalSlides) {
+                nextBtn.style.display = 'none';
+            } else {
+                nextBtn.style.display = 'block';
+            }
+
+            prevBtn.disabled = currentSlide === 1;
+            nextBtn.disabled = currentSlide === totalSlides;
+            slideCounter.textContent = `Slide ${currentSlide} of ${totalSlides}`;
+        }
+        
+        function changeSlide(slideNumber) {
+            if (slideNumber >= 1 && slideNumber <= totalSlides) {
+                currentSlide = slideNumber;
+                updateSlide();
+            }
+        }
+
+        function nextSlide() {
+            if (currentSlide < totalSlides) {
+                currentSlide++;
+                updateSlide();
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 1) {
+                currentSlide--;
+                updateSlide();
+            }
+        }
+
+        // Initial setup
+        document.addEventListener('DOMContentLoaded', () => {
+            updateSlide();
+        });
+    </script>
+</body>
+</html>
