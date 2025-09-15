@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Khwarizmi: Pioneer of AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow: hidden; /* Prevents scrollbars during slide transitions */
+        }
+        .slide {
+            min-width: 100%;
+            transition: transform 0.5s ease-in-out;
+        }
+        .slide-container {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .resource-button {
+            transition: all 0.3s ease;
+        }
+        .resource-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        /* Style for navigation buttons */
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center h-screen">
+
+    <div class="w-full max-w-4xl mx-auto relative">
+        <!-- Main Presentation Container -->
+        <div class="bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div class="slide-container">
+                <!-- Slide 1: Introduction -->
+                <div class="slide flex-shrink-0 w-full p-8 md:p-12">
+                    <div class="text-center">
+                        <img src="https://placehold.co/600x400/7c3aed/ffffff?text=Al-Khwarizmi" alt="Statue of Al-Khwarizmi" class="w-1/2 mx-auto rounded-lg mb-6" onerror="this.onerror=null;this.src='https://placehold.co/600x400/7c3aed/ffffff?text=Image+Not+Found';">
+                        <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-2">Al-Khwarizmi</h1>
+                        <p class="text-xl md:text-2xl text-purple-600 font-semibold">The Father of Algebra & Architect of Algorithms</p>
+                        <p class="mt-4 text-gray-600">An interactive exploration of his life, work, and enduring legacy in Artificial Intelligence.</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Early Life -->
+                <div class="slide flex-shrink-0 w-full p-8 md:p-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h2 class="text-3xl font-bold text-gray-800 mb-4">The Scholar of Baghdad</h2>
+                            <ul class="list-disc list-inside space-y-3 text-gray-700">
+                                <li>Born around 780 CE in Khwarazm (modern-day Uzbekistan).</li>
+                                <li>Flourished as a prominent scholar at the renowned <strong>House of Wisdom</strong> in Baghdad.</li>
+                                <li>This institution was the intellectual heart of the Islamic Golden Age, attracting brilliant minds from across the world.</li>
+                            </ul>
+                            <button onclick="window.open('https://www.youtube.com/watch?v=A4bY_65B3A0', '_blank')" class="resource-button mt-6 bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-purple-700">
+                                Explore the House of Wisdom
+                            </button>
+                        </div>
+                        <img src="https://placehold.co/600x400/10b981/ffffff?text=House+of+Wisdom" alt="Artistic representation of the House of Wisdom" class="rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/10b981/ffffff?text=Image+Not+Found';">
+                    </div>
+                </div>
+
+                <!-- Slide 3: Major Contributions - Algebra -->
+                <div class="slide flex-shrink-0 w-full p-8 md:p-12">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                         <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Al-Jabr+Manuscript" alt="A page from Al-Khwarizmi's manuscript on Algebra" class="rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/3b82f6/ffffff?text=Image+Not+Found';">
+                        <div>
+                            <h2 class="text-3xl font-bold text-gray-800 mb-4">The Birth of Algebra</h2>
+                            <ul class="list-disc list-inside space-y-3 text-gray-700">
+                                <li>Authored the groundbreaking book, <em>"Al-Kitab al-mukhtasar fi hisab al-jabr wa'l-muqabala"</em>.</li>
+                                <li>For the first time, he presented a systematic way to solve linear and quadratic equations.</li>
+                                <li>The word <strong>"Algebra"</strong> is derived from "al-jabr," a key operation described in his book.</li>
+                            </ul>
+                            <button onclick="window.open('https://www.youtube.com/watch?v=N-e_65S5G5A', '_blank')" class="resource-button mt-6 bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-blue-700">
+                                Watch: The History of Algebra
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4: Major Contributions - Numbers & More -->
+                <div class="slide flex-shrink-0 w-full p-8 md:p-12">
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <h2 class="text-3xl font-bold text-gray-800 mb-4">Revolutionizing Numbers & Science</h2>
+                            <ul class="list-disc list-inside space-y-3 text-gray-700">
+                                <li><strong>Hindu-Arabic Numerals:</strong> His work was crucial in popularizing the numbers 0-9 in the Middle East and Europe, replacing Roman numerals.</li>
+                                <li><strong>Astronomy:</strong> He compiled detailed astronomical tables (Zīj).</li>
+                                <li><strong>Geography:</strong> He improved upon Ptolemy's maps and helped calculate the Earth's circumference.</li>
+                             </ul>
+                            <button onclick="window.open('https://storyofmathematics.com/islamic-mathematics/', '_blank')" class="resource-button mt-6 bg-emerald-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-emerald-700">
+                                See: The Spread of Numerals
+                            </button>
+                        </div>
+                        <img src="https://placehold.co/600x400/ef4444/ffffff?text=Astrolabe" alt="An ancient astrolabe, an astronomical instrument" class="rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/ef4444/ffffff?text=Image+Not+Found';">
+                    </div>
+                </div>
+                
+                <!-- Slide 5: Influence on AI -->
+                <div class="slide flex-shrink-0 w-full p-8 md:p-12">
+                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                        <img src="https://placehold.co/600x400/f97316/ffffff?text=Algorithm+Flowchart" alt="A modern visual representation of an algorithm flowchart" class="rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/f97316/ffffff?text=Image+Not+Found';">
+                        <div>
+                           <h2 class="text-3xl font-bold text-gray-800 mb-4">From "Algoritmi" to "Algorithm"</h2>
+                            <ul class="list-disc list-inside space-y-3 text-gray-700">
+                                <li>The term <strong>"algorithm"</strong> is derived from the Latinization of his name, <em>Algoritmi</em>.</li>
+                                <li>His work established the concept of a clear, finite, step-by-step procedure to solve a problem.</li>
+                                <li>This systematic approach is the absolute foundation of all computer programming and artificial intelligence.</li>
+                            </ul>
+                            <button onclick="window.open('https://www.youtube.com/watch?v=6hfOvs8pY1k', '_blank')" class="resource-button mt-6 bg-orange-500 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-orange-600">
+                                Watch: What is an Algorithm?
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <button id="prevBtn" class="nav-button left-0 -ml-6 md:-ml-12 bg-white p-2 rounded-full shadow-lg text-gray-600 hover:bg-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </button>
+        <button id="nextBtn" class="nav-button right-0 -mr-6 md:-mr-12 bg-white p-2 rounded-full shadow-lg text-gray-600 hover:bg-gray-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+        </button>
+
+    </div>
+
+    <script>
+        const slideContainer = document.querySelector('.slide-container');
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+
+        let currentIndex = 0;
+        const totalSlides = slides.length;
+
+        function updateButtons() {
+            // Hide prev button on first slide
+            prevBtn.style.display = currentIndex === 0 ? 'none' : 'block';
+            // Hide next button on last slide
+            nextBtn.style.display = currentIndex === totalSlides - 1 ? 'none' : 'block';
+        }
+
+        function goToSlide(index) {
+            if (index < 0 || index >= totalSlides) return;
+            currentIndex = index;
+            const offset = -currentIndex * 100;
+            slideContainer.style.transform = `translateX(${offset}%)`;
+            updateButtons();
+        }
+
+        prevBtn.addEventListener('click', () => {
+            goToSlide(currentIndex - 1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            goToSlide(currentIndex + 1);
+        });
+        
+        // Initialize button visibility
+        updateButtons();
+
+    </script>
+</body>
+</html>
