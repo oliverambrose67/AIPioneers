@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fei-Fei Li: A Pioneer in Artificial Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <div class="p-8 md:p-12" id="presentation-container">
+
+            <!-- Slide 1: Title -->
+            <div id="slide-1" class="slide active fade-in">
+                <div class="text-center">
+                    <img src="https://placehold.co/600x400/a7b5ff/ffffff?text=Dr.+Fei-Fei+Li" alt="Image of Fei-Fei Li" class="w-1/2 mx-auto rounded-lg mb-6 shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/600x400/a7b5ff/ffffff?text=AI+Pioneer';">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">Dr. Fei-Fei Li</h1>
+                    <p class="text-xl md:text-2xl text-indigo-600">A Pioneer in Artificial Intelligence</p>
+                    <p class="mt-4 text-gray-600 max-w-2xl mx-auto">An interactive overview of her life, contributions, and lasting impact on the world of AI.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Early Life & Education -->
+            <div id="slide-2" class="slide fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-indigo-500 pb-2">Early Life & Education</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <ul class="space-y-4 text-gray-700">
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <span>Born in Beijing, China, in 1976 and grew up in Chengdu.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2h1a2 2 0 002-2v-1a2 2 0 012-2H19.95M12 11V3m0 8a2 2 0 100 4 2 2 0 000-4z"></path></svg>
+                                <span>Immigrated to Parsippany, New Jersey, at age 15, overcoming language and cultural barriers.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                                <span>Earned a Bachelor's in Physics from <strong>Princeton University</strong> (1999).</span>
+                            </li>
+                             <li class="flex items-start">
+                                <svg class="w-6 h-6 text-indigo-500 mr-3 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-9.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                                <span>Completed her Ph.D. in Electrical Engineering at <strong>Caltech</strong> (2005).</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <img src="https://placehold.co/600x400/c7d2fe/3730a3?text=University+Campuses" alt="University Campus illustration" class="rounded-lg shadow-md w-full" onerror="this.onerror=null;this.src='https://placehold.co/600x400/c7d2fe/3730a3?text=Education';">
+                </div>
+            </div>
+
+            <!-- Slide 3: Major Contributions -->
+            <div id="slide-3" class="slide fade-in">
+                 <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-indigo-500 pb-2">Major Contributions</h2>
+                 <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <img src="https://placehold.co/600x400/818cf8/ffffff?text=ImageNet+Concept" alt="Illustration of ImageNet database concept" class="rounded-lg shadow-md w-full" onerror="this.onerror=null;this.src='https://placehold.co/600x400/818cf8/ffffff?text=Database';">
+                    <div>
+                         <h3 class="text-2xl font-bold text-indigo-700 mb-3">ImageNet</h3>
+                         <p class="text-gray-700 mb-4">Dr. Li is the inventor of ImageNet, a groundbreaking dataset containing over <strong>14 million hand-annotated images</strong>. This project addressed the critical need for large-scale, high-quality data to train AI models.</p>
+                         <h3 class="text-2xl font-bold text-indigo-700 mb-3">ILSVRC</h3>
+                         <p class="text-gray-700">She co-launched the ImageNet Large Scale Visual Recognition Challenge (ILSVRC), an annual competition that became the benchmark for computer vision. The 2012 ILSVRC is widely seen as the event that kick-started the <strong>deep learning revolution</strong>.</p>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Slide 4: Human-Centered AI -->
+            <div id="slide-4" class="slide fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-indigo-500 pb-2">Advocacy for Human-Centered AI</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-gray-700 mb-6">Dr. Li is a passionate advocate for developing AI that is <strong>ethical, responsible, and beneficial to all of humanity</strong>. She believes technology should augment human capabilities, not replace them.</p>
+                        <ul class="space-y-4">
+                            <li><strong class="text-indigo-600">AI4ALL:</strong> Co-founder of a nonprofit to increase diversity and inclusion in AI education, especially for underrepresented groups.</li>
+                            <li><strong class="text-indigo-600">Stanford HAI:</strong> Co-Director of the Stanford Institute for Human-Centered AI, which guides research and policy to improve the human condition.</li>
+                        </ul>
+                    </div>
+                    <img src="https://placehold.co/600x400/a5b4fc/1e1b4b?text=Humanity+&+AI" alt="Illustration of humanity and technology working together" class="rounded-lg shadow-md w-full" onerror="this.onerror=null;this.src='https://placehold.co/600x400/a5b4fc/1e1b4b?text=Ethics';">
+                </div>
+            </div>
+
+            <!-- Slide 5: Influence on Modern AI -->
+            <div id="slide-5" class="slide fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-4 border-indigo-500 pb-2">Influence on Modern AI</h2>
+                <p class="text-gray-700 mb-6">The creation of ImageNet directly enabled the deep learning breakthroughs that power many technologies we use today. Her work laid the foundation for modern computer vision.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <img src="https://placehold.co/300x200/e0e7ff/4338ca?text=Self-Driving+Car" class="w-full h-32 object-cover rounded-md mb-2" onerror="this.onerror=null;this.src='https://placehold.co/300x200/e0e7ff/4338ca?text=Automotive';">
+                        <h4 class="font-semibold text-indigo-800">Autonomous Vehicles</h4>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                        <img src="https://placehold.co/300x200/e0e7ff/4338ca?text=Medical+Scan" class="w-full h-32 object-cover rounded-md mb-2" onerror="this.onerror=null;this.src='https://placehold.co/300x200/e0e7ff/4338ca?text=Healthcare';">
+                        <h4 class="font-semibold text-indigo-800">Medical Imaging</h4>
+                    </div>
+                    <div class="bg-indigo-50 p-4 rounded-lg">
+                         <img src="https://placehold.co/300x200/e0e7ff/4338ca?text=Facial+Recognition" class="w-full h-32 object-cover rounded-md mb-2" onerror="this.onerror=null;this.src='https://placehold.co/300x200/e0e7ff/4338ca?text=Security';">
+                        <h4 class="font-semibold text-indigo-800">Facial Recognition</h4>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 6: Learn More -->
+            <div id="slide-6" class="slide fade-in">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Learn More</h2>
+                <p class="text-center text-gray-600 mb-8">Explore these resources to dive deeper into Dr. Fei-Fei Li's work and the field of human-centered AI.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                    <a href="https://www.ted.com/talks/fei_fei_li_how_we_re_teaching_computers_to_understand_pictures" target="_blank" class="w-full md:w-auto text-center bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition duration-300">
+                        Watch her TED Talk
+                    </a>
+                    <a href="https://hai.stanford.edu/" target="_blank" class="w-full md:w-auto text-center bg-blue-800 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-900 transition duration-300">
+                        Stanford HAI Website
+                    </a>
+                    <a href="https://ai-4-all.org/" target="_blank" class="w-full md:w-auto text-center bg-green-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300">
+                        AI4ALL Website
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="bg-gray-50 px-8 py-4 flex justify-between items-center border-t">
+            <button id="prev-btn" class="bg-gray-300 text-gray-800 font-bold py-2 px-4 rounded-lg hover:bg-gray-400 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed">
+                Previous
+            </button>
+            <div id="slide-indicator" class="text-sm text-gray-600"></div>
+            <button id="next-btn" class="bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">
+                Next
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const slideIndicator = document.getElementById('slide-indicator');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    if (i === index) {
+                        slide.classList.add('active');
+                    }
+                });
+                updateNavigation();
+            }
+
+            function updateNavigation() {
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === slides.length - 1;
+                slideIndicator.textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initialize
+            showSlide(currentSlide);
+        });
+    </script>
+
+</body>
+</html>
