@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Newell: AI Pioneer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow: hidden; /* Prevent scrolling the whole page */
+        }
+        .slide {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+            opacity: 1;
+        }
+        .button-link {
+            transition: all 0.2s ease-in-out;
+        }
+        .button-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .nav-button {
+            transition: all 0.2s ease-in-out;
+        }
+        .nav-button:hover:not(:disabled) {
+            background-color: #3b82f6; /* A slightly darker blue on hover */
+        }
+        .nav-button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-white flex items-center justify-center h-screen p-4">
+
+    <div class="w-full max-w-4xl h-[90vh] max-h-[600px] bg-slate-800 rounded-2xl shadow-2xl flex flex-col p-6 relative">
+        
+        <!-- Slides Container -->
+        <div id="slides-container" class="flex-grow relative">
+            <!-- Slide 1: Title -->
+            <div id="slide-1" class="slide active h-full">
+                <div class="flex flex-col md:flex-row items-center justify-center h-full gap-8 text-center md:text-left">
+                    <img src="https://placehold.co/250x250/1e293b/ffffff?text=Allen+Newell" alt="Portrait of Allen Newell" class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-slate-600">
+                    <div>
+                        <h1 class="text-4xl md:text-6xl font-bold text-blue-400">Allen Newell</h1>
+                        <p class="mt-4 text-xl md:text-2xl text-slate-300">A Founding Father of Artificial Intelligence</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Early Life & Education -->
+            <div id="slide-2" class="slide h-full">
+                <div class="flex flex-col items-center h-full p-4 md:p-8">
+                    <h2 class="text-3xl font-bold text-blue-400 mb-6">Early Life & Education</h2>
+                    <div class="flex flex-col md:flex-row items-center gap-8 w-full">
+                        <img src="https://placehold.co/600x400/1e293b/ffffff?text=Vintage+Campus" alt="Vintage University Campus" class="w-full md:w-1/2 h-auto max-h-[300px] rounded-lg object-cover">
+                        <ul class="space-y-4 text-lg text-slate-300 list-disc list-inside w-full md:w-1/2">
+                            <li>Graduated from <span class="font-semibold text-blue-300">Stanford University</span> with a B.S. in Physics.</li>
+                            <li>Began his career at the <span class="font-semibold text-blue-300">RAND Corporation</span>, a prominent think tank.</li>
+                            <li>Met his long-time collaborator, <span class="font-semibold text-blue-300">Herbert A. Simon</span>, at RAND, forming a pivotal partnership.</li>
+                            <li>This collaboration shifted his focus towards simulating human decision-making and problem-solving.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: The Logic Theorist -->
+            <div id="slide-3" class="slide h-full">
+                <div class="flex flex-col items-center h-full p-4 md:p-8">
+                    <h2 class="text-3xl font-bold text-blue-400 mb-6">Major Contribution: The Logic Theorist (1956)</h2>
+                    <div class="flex flex-col md:flex-row items-center gap-8 w-full">
+                        <ul class="space-y-4 text-lg text-slate-300 list-disc list-inside w-full md:w-1/2">
+                            <li>Widely considered the <span class="font-semibold text-blue-300">world's first artificial intelligence program</span>.</li>
+                            <li>It was designed to mimic the problem-solving skills of a human to prove theorems in symbolic logic.</li>
+                            <li>Successfully proved 38 of the first 52 theorems from Whitehead and Russell's *Principia Mathematica*.</li>
+                             <li>Crucially, it demonstrated that machines could perform tasks requiring <span class="font-semibold text-blue-300">reasoning and creativity</span>.</li>
+                        </ul>
+                        <img src="https://placehold.co/600x400/1e293b/ffffff?text=Symbolic+Logic" alt="Abstract representation of logic" class="w-full md:w-1/2 h-auto max-h-[300px] rounded-lg object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: The General Problem Solver -->
+            <div id="slide-4" class="slide h-full">
+                 <div class="flex flex-col items-center h-full p-4 md:p-8">
+                    <h2 class="text-3xl font-bold text-blue-400 mb-6">Major Contribution: General Problem Solver (1957)</h2>
+                    <div class="flex flex-col md:flex-row items-center gap-8 w-full">
+                        <img src="https://placehold.co/600x400/1e293b/ffffff?text=Problem+Solving+Diagram" alt="Diagram of problem solving" class="w-full md:w-1/2 h-auto max-h-[300px] rounded-lg object-cover">
+                        <ul class="space-y-4 text-lg text-slate-300 list-disc list-inside w-full md:w-1/2">
+                            <li>A more ambitious program designed to work as a <span class="font-semibold text-blue-300">universal problem-solver</span> machine.</li>
+                            <li>Introduced the crucial AI concept of <span class="font-semibold text-blue-300">"means-ends analysis"</span>.</li>
+                            <li>This technique involves breaking down a main goal into smaller, more manageable sub-goals.</li>
+                            <li>It was a foundational step toward creating flexible AI that could tackle a variety of complex tasks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Influence on Modern AI -->
+            <div id="slide-5" class="slide h-full">
+                <div class="flex flex-col items-center h-full p-4 md:p-8">
+                    <h2 class="text-3xl font-bold text-blue-400 mb-6">Influence on Modern AI</h2>
+                    <div class="flex flex-col md:flex-row items-center gap-8 w-full">
+                        <ul class="space-y-4 text-lg text-slate-300 list-disc list-inside w-full md:w-1/2">
+                            <li>His work on <span class="font-semibold text-blue-300">Symbolic AI</span> and <span class="font-semibold text-blue-300">Heuristic Search</span> are still core principles in the field.</li>
+                            <li>Pioneered <span class="font-semibold text-blue-300">Cognitive Architectures</span> (like Soar), aiming to model the entire human cognitive process.</li>
+                            <li>His approach of separating problem-solving logic from domain knowledge is a standard practice in modern AI system design.</li>
+                            <li>His legacy is visible in route-planning apps, automated reasoning systems, and cognitive science.</li>
+                        </ul>
+                        <img src="https://placehold.co/600x400/1e293b/ffffff?text=Modern+AI" alt="Evolution of AI from old computers to modern robotics" class="w-full md:w-1/2 h-auto max-h-[300px] rounded-lg object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 6: Additional Resources -->
+            <div id="slide-6" class="slide h-full">
+                 <div class="flex flex-col items-center justify-center h-full text-center">
+                    <h2 class="text-3xl font-bold text-blue-400 mb-8">Discover More</h2>
+                    <p class="text-lg text-slate-300 mb-8">Explore these resources to learn more about Allen Newell's work and the birth of AI.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <a href="https://www.youtube.com/watch?v=1Qy6p1vC1j8" target="_blank" class="button-link bg-blue-500 p-4 rounded-lg shadow-lg flex items-center justify-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a2.4 2.4 0 0 1 3 0L8 20l6.5-6.5a2.4 2.4 0 0 1 3 0L21.5 17"/><path d="m18 15-1-1-1.5 1.5"/><path d="M2.5 7a2.4 2.4 0 0 0 3 0L8 4l6.5 6.5a2.4 2.4 0 0 0 3 0L21.5 7"/><path d="m18 9 1-1 1.5-1.5"/></svg>
+                            <span>Video: History of AI</span>
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Logic_Theorist" target="_blank" class="button-link bg-blue-500 p-4 rounded-lg shadow-lg flex items-center justify-center gap-3">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                            <span>Article: The Logic Theorist</span>
+                        </a>
+                        <a href="https://www.britannica.com/biography/Allen-Newell" target="_blank" class="button-link bg-blue-500 p-4 rounded-lg shadow-lg flex items-center justify-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                            <span>Biography: Allen Newell</span>
+                        </a>
+                        <a href="https://digitalcollections.library.cmu.edu/cmu-collection/allen-newell" target="_blank" class="button-link bg-blue-500 p-4 rounded-lg shadow-lg flex items-center justify-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2Z"/><path d="M16 12h-4"/><path d="M12 16V8"/></svg>
+                            <span>CMU Digital Archives</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between items-center pt-4 border-t border-slate-700">
+            <span id="slide-counter" class="text-sm text-slate-400">1 / 6</span>
+            <div class="flex gap-4">
+                <button id="prev-btn" class="nav-button bg-blue-600 px-4 py-2 rounded-lg font-semibold shadow-md disabled:bg-slate-600">Previous</button>
+                <button id="next-btn" class="nav-button bg-blue-600 px-4 py-2 rounded-lg font-semibold shadow-md disabled:bg-slate-600">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            let currentSlide = 1;
+            const totalSlides = document.querySelectorAll('.slide').length;
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const slideCounter = document.getElementById('slide-counter');
+
+            function updateSlideView() {
+                slides.forEach((slide, index) => {
+                    if (index + 1 === currentSlide) {
+                        slide.classList.add('active');
+                    } else {
+                        slide.classList.remove('active');
+                    }
+                });
+                
+                // Update counter
+                slideCounter.textContent = `${currentSlide} / ${totalSlides}`;
+
+                // Update button states
+                prevBtn.disabled = currentSlide === 1;
+                nextBtn.disabled = currentSlide === totalSlides;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides) {
+                    currentSlide++;
+                    updateSlideView();
+                }
+            });
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 1) {
+                    currentSlide--;
+                    updateSlideView();
+                }
+            });
+
+            // Initialize view
+            updateSlideView();
+        });
+    </script>
+
+</body>
+</html>
+
