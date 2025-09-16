@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pioneer: Ashish Vaswani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.8s;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .resource-btn {
+            transition: all 0.3s ease;
+        }
+        .resource-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-4xl mx-auto">
+        <div id="presentation-container" class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl overflow-hidden">
+            <!-- Slide 1: Title -->
+            <div id="slide1" class="slide active p-8 md:p-12">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-indigo-600 dark:text-indigo-400 mb-4">The Architect of Modern AI</h1>
+                    <p class="text-2xl md:text-3xl font-semibold mb-6">Ashish Vaswani</p>
+                    <div class="flex justify-center">
+                         <img src="https://www.forbesindia.com/media/images/2024/Jun/img_235489_ashishvaswani.jpg" alt="Portrait of Ashish Vaswani" class="rounded-lg shadow-lg w-64 h-64 object-cover border-4 border-indigo-200 dark:border-indigo-700">
+                    </div>
+                    <p class="mt-6 text-lg text-gray-600 dark:text-gray-400">An interactive look at the mind behind the Transformer architecture.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Early Life & Education -->
+            <div id="slide2" class="slide p-8 md:p-12">
+                 <h2 class="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-6 text-center">Formative Years: A Foundation in Tech</h2>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="flex justify-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Bit_mesra_main_building.jpg" alt="Birla Institute of Technology, Mesra Campus" class="rounded-lg shadow-lg w-full max-w-md object-cover">
+                    </div>
+                    <div>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-3 mt-1">&#10003;</span>
+                                <span>Born in India, with an early fascination for science and mathematics.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-3 mt-1">&#10003;</span>
+                                <span>Completed his undergraduate degree in Computer Science and Engineering at the <strong>Birla Institute of Technology, Mesra</strong>.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-3 mt-1">&#10003;</span>
+                                <span>Moved to the U.S. for higher education, earning a <strong>Ph.D. in Computer Science</strong> from the <strong>University of Southern California (USC)</strong>.</span>
+                            </li>
+                             <li class="flex items-start">
+                                <span class="text-indigo-500 mr-3 mt-1">&#10003;</span>
+                                <span>His doctoral research focused on <strong>natural language processing (NLP)</strong> and machine translation, setting the stage for his future work.</span>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+
+            <!-- Slide 3: The Transformer Revolution -->
+            <div id="slide3" class="slide p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-6 text-center">The Transformer Revolution</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-3">"Attention Is All You Need"</h3>
+                        <p class="mb-4 text-lg">In 2017, while at Google Brain, Vaswani was the lead author of this seminal paper. It introduced a novel network architecture called the <strong>Transformer</strong>.</p>
+                        <h3 class="text-2xl font-semibold mb-3">Key Innovation: Self-Attention</h3>
+                        <p class="text-lg">Instead of processing data sequentially like older models (RNNs), the Transformer's <strong>self-attention mechanism</strong> allows it to weigh the influence of all words in a sentence simultaneously, capturing complex, long-range relationships.</p>
+                         <div class="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
+                            <a href="https://arxiv.org/abs/1706.03762" target="_blank" class="resource-btn bg-indigo-600 text-white py-2 px-4 rounded-lg font-semibold shadow-md hover:bg-indigo-700">Read the Paper</a>
+                            <a href="https://www.youtube.com/watch?v=4Bdc55j80l8" target="_blank" class="resource-btn bg-red-500 text-white py-2 px-4 rounded-lg font-semibold shadow-md hover:bg-red-600">Watch Video Explainer</a>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                       <img src="https://jalammar.github.io/images/t/transformer_overview.png" alt="Diagram of the Transformer Architecture" class="rounded-lg shadow-lg w-full max-w-md object-contain bg-white p-2">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Impact on Modern AI -->
+            <div id="slide4" class="slide p-8 md:p-12">
+                <h2 class="text-3xl font-bold text-indigo-600 dark:text-indigo-400 mb-6 text-center">A New Foundation for AI</h2>
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                     <div class="flex justify-center order-last md:order-first">
+                        <img src="https://placehold.co/600x400/7c3aed/ffffff?text=Generative+AI" alt="Generative AI creating art" class="rounded-lg shadow-lg w-full max-w-md object-cover">
+                    </div>
+                    <div>
+                        <ul class="space-y-4 text-lg">
+                           <li class="flex items-start">
+                                <span class="text-indigo-500 mr-3 mt-1">&#10148;</span>
+                                <span><strong>Large Language Models (LLMs):</strong> The Transformer is the backbone of models like GPT, BERT, and LaMDA, enabling their sophisticated understanding of language.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-3 mt-1">&#10148;</span>
+                                <span><strong>Generative AI Boom:</strong> It powers tools that generate text, images (DALL-E), code (Copilot), and more, revolutionizing creative and technical fields.</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-indigo-500 mr-3 mt-1">&#10148;</span>
+                                <span><strong>Beyond Language:</strong> The architecture has been adapted for computer vision, drug discovery, and even playing complex games.</span>
+                            </li>
+                        </ul>
+                         <div class="mt-6 flex flex-wrap gap-3 justify-center md:justify-start">
+                             <a href="https://aws.amazon.com/what-is/transformers-in-artificial-intelligence/" target="_blank" class="resource-btn bg-green-600 text-white py-2 px-4 rounded-lg font-semibold shadow-md hover:bg-green-700">Learn More: AWS Explainer</a>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex justify-between mt-6">
+            <button id="prevBtn" class="bg-gray-300 dark:bg-gray-600 text-gray-800 dark:text-gray-200 font-bold py-2 px-6 rounded-lg shadow-md hover:bg-gray-400 dark:hover:bg-gray-500 transition disabled:opacity-50 disabled:cursor-not-allowed">Previous</button>
+            <div id="slide-indicator" class="flex items-center text-gray-600 dark:text-gray-400 font-semibold">
+                Slide <span id="current-slide">1</span> of <span id="total-slides">4</span>
+            </div>
+            <button id="nextBtn" class="bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition disabled:opacity-50 disabled:cursor-not-allowed">Next</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const currentSlideEl = document.getElementById('current-slide');
+            const totalSlidesEl = document.getElementById('total-slides');
+
+            let currentSlide = 0;
+            const totalSlides = slides.length;
+            totalSlidesEl.textContent = totalSlides;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                currentSlideEl.textContent = index + 1;
+                
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === totalSlides - 1;
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < totalSlides - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+            
+            // Initialize first slide
+            showSlide(currentSlide);
+        });
+    </script>
+
+</body>
+</html>
+
