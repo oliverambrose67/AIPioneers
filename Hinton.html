@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pioneer: Geoffrey Hinton</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1e293b;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        .btn {
+            @apply px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75 transition-all duration-200 ease-in-out;
+        }
+        .btn-secondary {
+            @apply bg-slate-500 hover:bg-slate-600 focus:ring-slate-400;
+        }
+        .card {
+            @apply bg-white p-8 md:p-12 rounded-2xl shadow-2xl transition-transform duration-500 ease-in-out;
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen">
+
+    <div id="presentation" class="w-full max-w-4xl mx-auto p-4">
+
+        <!-- Slide 1: Title -->
+        <div id="slide-1" class="slide active">
+            <div class="card text-center fade-in">
+                <img src="https://www.cs.toronto.edu/~hinton/hinton.jpeg" alt="Geoffrey Hinton" class="w-40 h-40 mx-auto rounded-full mb-6 shadow-lg border-4 border-white" onerror="this.onerror=null;this.src='https://placehold.co/160x160/E2E8F0/4A5568?text=G.+Hinton';">
+                <h1 class="text-4xl md:text-5xl font-bold text-slate-800 mb-2">AI Pioneer: Geoffrey Hinton</h1>
+                <p class="text-xl text-slate-500">The "Godfather of AI"</p>
+                <div class="mt-8">
+                    <button onclick="changeSlide(2)" class="btn">Start Presentation</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Early Life & Education -->
+        <div id="slide-2" class="slide">
+            <div class="card fade-in">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-blue-200 pb-2">Early Life & Education</h2>
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="md:w-2/3 space-y-4 text-slate-600">
+                        <p><strong class="text-slate-800">Born:</strong> December 6, 1947, in Wimbledon, London, England.</p>
+                        <p>Hinton's academic path showed his early fascination with understanding the mind and intelligence.</p>
+                        <ul class="list-disc list-inside space-y-2 pl-4">
+                            <li><strong class="font-semibold text-blue-600">1970:</strong> Earned a Bachelor of Arts in <span class="font-bold">Experimental Psychology</span> from the University of Cambridge.</li>
+                            <li><strong class="font-semibold text-blue-600">1978:</strong> Awarded a <span class="font-bold">Ph.D. in Artificial Intelligence</span> from the University of Edinburgh.</li>
+                        </ul>
+                         <p>His career included professorships at Carnegie Mellon University and the University of Toronto, alongside a significant role at Google Brain.</p>
+                    </div>
+                    <div class="md:w-1/3">
+                        <img src="https://images.unsplash.com/photo-1519074002996-a69e7ac46a42?q=80&w=1887&auto=format&fit=crop" alt="University Campus" class="rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/400x300/E2E8F0/4A5568?text=University';">
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-between">
+                    <button onclick="changeSlide(1)" class="btn btn-secondary">Previous</button>
+                    <button onclick="changeSlide(3)" class="btn">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Major Contributions -->
+        <div id="slide-3" class="slide">
+            <div class="card fade-in">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-blue-200 pb-2">Major Contributions</h2>
+                <div class="space-y-6 text-slate-600">
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700">Backpropagation Algorithm (1986)</h3>
+                        <p>Hinton co-authored a paper that was crucial in popularizing the backpropagation algorithm. This method allows neural networks to learn from their mistakes by adjusting internal connections, and it is now a fundamental part of training most deep learning models.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-blue-700">Boltzmann Machines (1985)</h3>
+                        <p>He co-invented Boltzmann Machines, one of the first neural networks capable of learning internal representations of data without direct supervision. This was a key step toward creating more autonomous and powerful AI systems.</p>
+                    </div>
+                     <div>
+                        <h3 class="text-xl font-semibold text-blue-700">Breakthroughs in Deep Learning</h3>
+                        <p>His research group in Toronto was behind <strong class="text-slate-800">AlexNet</strong>, a deep neural network that won the 2012 ImageNet competition decisively. This event is widely seen as the "Big Bang" moment for the deep learning boom, proving its practical power.</p>
+                    </div>
+                </div>
+                 <div class="mt-8 flex justify-between">
+                    <button onclick="changeSlide(2)" class="btn btn-secondary">Previous</button>
+                    <button onclick="changeSlide(4)" class="btn">Next</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 4: Influence on Modern AI -->
+        <div id="slide-4" class="slide">
+            <div class="card fade-in">
+                 <h2 class="text-3xl font-bold text-slate-800 mb-6 border-b-2 border-blue-200 pb-2">Influence on Modern AI</h2>
+                 <p class="mb-6 text-slate-600">Hinton's foundational work is the bedrock of many AI applications we use every day. The principles he developed directly enable the following technologies:</p>
+                 <div class="grid md:grid-cols-2 gap-6 text-center">
+                    <div class="bg-slate-50 p-4 rounded-lg">
+                        <svg class="w-12 h-12 mx-auto text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        <h3 class="font-semibold mt-2">Image Recognition</h3>
+                        <p class="text-sm text-slate-500">Powers facial recognition on your phone and automatic photo tagging on social media.</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-lg">
+                         <svg class="w-12 h-12 mx-auto text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                        <h3 class="font-semibold mt-2">Voice Assistants</h3>
+                        <p class="text-sm text-slate-500">Enables the natural language understanding of systems like Siri, Alexa, and Google Assistant.</p>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-lg">
+                        <svg class="w-12 h-12 mx-auto text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                        <h3 class="font-semibold mt-2">Language Models</h3>
+                        <p class="text-sm text-slate-500">Forms the basis for large language models (LLMs) that can write, code, and translate.</p>
+                    </div>
+                     <div class="bg-slate-50 p-4 rounded-lg">
+                        <svg class="w-12 h-12 mx-auto text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6"></path></svg>
+                        <h3 class="font-semibold mt-2">Scientific Research</h3>
+                        <p class="text-sm text-slate-500">Used in medical imaging analysis, drug discovery, and complex data modeling.</p>
+                    </div>
+                 </div>
+                 <div class="mt-8 flex justify-between">
+                    <button onclick="changeSlide(3)" class="btn btn-secondary">Previous</button>
+                    <button onclick="changeSlide(5)" class="btn">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Additional Resources -->
+        <div id="slide-5" class="slide">
+            <div class="card text-center fade-in">
+                 <h2 class="text-3xl font-bold text-slate-800 mb-6">Learn More</h2>
+                 <p class="text-slate-600 mb-8">Dive deeper into the world of neural networks and Geoffrey Hinton's work with these curated resources.</p>
+                 <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank" class="btn">What is a Neural Network? (Video)</a>
+                    <a href="https://www.youtube.com/watch?v=Ilg3gGewQ5U" target="_blank" class="btn">Backpropagation Explained (Video)</a>
+                    <a href="https://amturing.acm.org/award_winners/hinton_4791679.cfm" target="_blank" class="btn">Turing Award Article</a>
+                 </div>
+                  <div class="mt-12 flex justify-start">
+                    <button onclick="changeSlide(4)" class="btn btn-secondary">Previous</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 1;
+        const totalSlides = 5;
+
+        function showSlide(slideNumber) {
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.classList.remove('active');
+            });
+            const newSlide = document.getElementById(`slide-${slideNumber}`);
+            if(newSlide) {
+                newSlide.classList.add('active');
+            }
+        }
+
+        function changeSlide(newSlideNumber) {
+            if (newSlideNumber > 0 && newSlideNumber <= totalSlides) {
+                currentSlide = newSlideNumber;
+                showSlide(currentSlide);
+            }
+        }
+
+        // Initialize the first slide
+        document.addEventListener('DOMContentLoaded', () => {
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
+
+
+I've crafted this presentation in a single HTML file for you. It covers all the sections you requested and includes interactive navigation.
+
+Simply open the file in a web browser to view and click through the slides. The "Learn More" section contains direct links to excellent video explainers and the official ACM Turing Award article for deeper research. Let me know if you'd like any adjustments!
