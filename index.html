@@ -1,10 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Awesome Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pioneers of Artificial Intelligence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .pioneer-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .pioneer-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .btn-gradient {
+            background-size: 200% 100%;
+            transition: background-position 0.5s ease;
+        }
+        .btn-gradient:hover {
+            background-position: right center;
+        }
+    </style>
 </head>
-<body>
-<h1>Hello, World!</h1>
-<p>Welcome to my first GitHub Pages website.</p>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+
+    <div class="container mx-auto px-4 py-8 md:py-16">
+
+        <!-- Title and Introduction Section -->
+        <header class="text-center mb-12 md:mb-16">
+            <h1 class="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-4">
+                The Pioneers of Artificial Intelligence
+            </h1>
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 dark:text-gray-400">
+                An AI Pioneer is a visionary whose foundational ideas, groundbreaking research, or pivotal inventions charted the course for the field of artificial intelligence. They are the architects of the algorithms, concepts, and machines that taught us how to imbue technology with the logic, reasoning, and learning that define intelligence itself. This collection honors their legacy.
+            </p>
+        </header>
+
+        <!-- Pioneers Grid Section -->
+        <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 md:gap-10">
+
+            <!-- Al-Khwarizmi -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Stamp_of_USSR_1983_CPA_5417.jpg/800px-Stamp_of_USSR_1983_CPA_5417.jpg" alt="Al-Khwarizmi" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Al-Khwarizmi</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">c. 780 – c. 850</p>
+                    <div class="mt-auto">
+                        <a href="Khwarizimi.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-teal-400 to-blue-500">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- George Boole -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/George_Boole_color.jpg/800px-George_Boole_color.jpg" alt="George Boole" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">George Boole</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">1815 – 1864</p>
+                    <div class="mt-auto">
+                        <a href="Boole.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-green-400 to-cyan-500">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Arthur Samuel -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://history-computer.com/ModernComputer/Software/images/Samuel.jpg" alt="Arthur Samuel" class="w-full h-56 object-cover object-top">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Arthur Samuel</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">1901 – 1990</p>
+                    <div class="mt-auto">
+                       <a href="Samuel.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-gray-500 to-gray-700">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Alan Turing -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Alan_Turing_Aged_16.jpg/800px-Alan_Turing_Aged_16.jpg" alt="Alan Turing" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Alan Turing</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">1912 – 1954</p>
+                    <div class="mt-auto">
+                        <a href="Turing.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-orange-400 to-red-500">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Herbert Simon -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://upload.wikimedia.org/wikipedia/en/9/98/Herbert_A._Simon.jpg" alt="Herbert Simon" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Herbert Simon</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">1916 – 2001</p>
+                    <div class="mt-auto">
+                        <a href="Simon.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-yellow-400 to-amber-500">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Joseph Weizenbaum -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Joseph_Weizenbaum_2_%28quadrat%29.jpg/800px-Joseph_Weizenbaum_2_%28quadrat%29.jpg" alt="Joseph Weizenbaum" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Joseph Weizenbaum</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">1923 – 2008</p>
+                    <div class="mt-auto">
+                       <a href="Weizenbaum.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-lime-400 to-green-500">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Allen Newell -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://amturing.acm.org/images/lg_aw/1433433.jpg" alt="Allen Newell" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Allen Newell</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">1927 – 1992</p>
+                    <div class="mt-auto">
+                        <a href="Newell.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-sky-400 to-blue-600">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- John McCarthy -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/John_McCarthy_Stanford.jpg/800px-John_McCarthy_Stanford.jpg" alt="John McCarthy" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">John McCarthy</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">1927 – 2011</p>
+                    <div class="mt-auto">
+                        <a href="McCarthy.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-red-500 to-rose-500">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marvin Minsky -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Marvin_Minsky_at_OLPCb.jpg/800px-Marvin_Minsky_at_OLPCb.jpg" alt="Marvin Minsky" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Marvin Minsky</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">1927 – 2016</p>
+                    <div class="mt-auto">
+                        <a href="Minsky.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-violet-500 to-fuchsia-500">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geoffrey Hinton -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Geoffrey_Hinton_at_a_2016_Royal_Society_event_in_London_for_the_Turing_Award_%28cropped%29.jpg/800px-Geoffrey_Hinton_at_a_2016_Royal_Society_event_in_London_for_the_Turing_Award_%28cropped%29.jpg" alt="Geoffrey Hinton" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Geoffrey Hinton</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">b. 1947</p>
+                    <div class="mt-auto">
+                        <a href="Hinton.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-blue-500 to-indigo-600">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Fei-Fei Li -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Fei-Fei_Li_in_2018.jpg/800px-Fei-Fei_Li_in_2018.jpg" alt="Fei-Fei Li" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Fei-Fei Li</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">b. 1976</p>
+                    <div class="mt-auto">
+                       <a href="Li.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-pink-500 to-purple-600">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ashish Vaswani -->
+            <div class="pioneer-card bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden flex flex-col">
+                <img src="https://www.forbesindia.com/media/images/2024/Jun/img_235489_ashishvaswani.jpg" alt="Ashish Vaswani" class="w-full h-56 object-cover">
+                <div class="p-6 flex flex-col flex-grow">
+                    <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Ashish Vaswani</h2>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">b. 1986</p>
+                    <div class="mt-auto">
+                        <a href="Vaswani.html" class="block w-full text-center text-white font-semibold rounded-lg px-4 py-2 btn-gradient bg-gradient-to-r from-cyan-500 to-light-blue-500">View Contribution</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        
+        <footer class="text-center mt-12 md:mt-16">
+            <p class="text-gray-500 dark:text-gray-400">Project Website created with assistance from an AI.
+            </p>
+        </footer>
+
+    </div>
+
 </body>
 </html>
+
